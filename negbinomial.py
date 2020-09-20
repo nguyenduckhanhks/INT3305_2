@@ -14,7 +14,7 @@ def C(n, k):
 def prob(n, p, r):
     assert r > 0
     assert n >= r
-    assert 0 <= p <= 1
+    assert 0 < p <= 1
     return C(n-1, r-1) * (p ** r) * ((1-p) ** (n - r))
 
 def infoMeasure(n, p, r):

@@ -13,7 +13,7 @@ def C(n, k):
 
 def prob(n, p, N):
     assert n >= 0
-    assert 0 <= p <= 1
+    assert 0 < p <= 1
     assert N >= n
     return (p ** n) * ((1-p) ** (N-n)) * C(N,n)
 
