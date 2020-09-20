@@ -9,7 +9,9 @@ def infoMeasure(n, p):
     return - math.log2(prob(n, p))
 
 def sumProb(N, p):
-    "k biet viet j ca"
+    """
+    Ham nay tinh tong xac suat cua tat ca cac truong hop xay ra => ket qua = 1
+    """
     sum = 0
     for x in range(1, N + 1):
         sum += prob(x, p)
