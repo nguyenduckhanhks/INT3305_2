@@ -32,8 +32,3 @@ def approxEntropy(N, p):
     for x in range(0, N + 1):
         sum += infoMeasure(x, p, N) * prob(x, p, N)
     return sum
-
-print( prob(20, 0.4, 50) )
-print( infoMeasure(20, 0.4, 50) )
-print( sumProb(50, 0.4) )
-print( approxEntropy(50 ,0.4) )
